@@ -1,0 +1,52 @@
+<html>
+<head>
+<link href = "style.css" type = "text/css" rel = "stylesheet">
+</head>
+
+  <body>
+  <canvas id="the_canvas" width="400" height="400"></canvas>
+  <<script>
+  var canvas = document.getElementById('the_canvas');
+  var ctx = canvas.getContext('2d');
+   ctx.beginPath();
+   ctx.arc(155,75,50,0,Math.PI*2,true); // Outer circle
+   ctx.moveTo(110,75);
+   ctx.arc(155,75,35,0,Math.PI,false);   // Mouth (clockwise)
+    ctx.moveTo(65,65);
+    ctx.arc(60,65,5,0,Math.PI*2,true);  // Left eye
+    ctx.moveTo(95,65);
+    ctx.arc(90,65,5,0,Math.PI*2,true);  // Right eye
+    ctx.stroke();
+//http://img3.wikia.nocookie.net/__cb20090728184810/familyguy/images/e/e6/Raisin_Bran.jpg
+  //  ctx.fillStyle = "grey";
+  //  ctx.fillRect(0,0,400,133);
+  //  ctx.fillStyle = "blue";
+  //  ctx.fillRect(0,100,400,133);
+  //  ctx.fillStyle = "yellow";
+  //  ctx.fillRect(0,200,400,133);
+  //
+
+
+    // id= are unique and each element can only have one id
+    // each page can have only one element with that id
+    // but you can use classes over and over again
+    // Classes are NOT unique
+    // you can use the same class on multiple elements
+    // you can use multiple classes on the same element
+    // id= have special browser functionality, this is the hash value in the url
+    // Javascript depends on there being only one page element with
+    // any particular, or else the commonly used getElement by id=
+    // would not be dependable
+    // classes and id are for styling and page manipulation
+    // use id to try and describe the context of the element
+    // HTMLCanvasElement interface provides properties and methods
+    // for manipulation the layout and presentation of canvas elemetns
+    // interface also inherits the properties and methods of the
+    // HTMLElement interface
+    // .getContext returns a drawing context on the canvas or null
+    // if the context ID is not supported
+
+  </script>
+
+  </body>
+</html>
